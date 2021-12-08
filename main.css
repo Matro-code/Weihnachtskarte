@@ -114,6 +114,9 @@ body {
 
   #bild {
     width: 30vmax;
+  }
+  
+  bild {
     width: 20rem;
     margin-top: 2rem;
   }
