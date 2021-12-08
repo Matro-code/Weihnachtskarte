@@ -112,11 +112,11 @@ body {
     padding: 0.5rem, 0;
   }
 
-  #bild {
+  .bild {
     width: 30vmax;
   }
   
-  bild {
+  .bild {
     width: 20rem;
     margin-top: 2rem;
   }
