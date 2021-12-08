@@ -49,9 +49,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-#bild {
-  width: 30vmax;
-}
 
 .snow-wrapper {
   left: 50%;
@@ -116,6 +113,7 @@ body {
   }
 
   #bild {
+    width: 30vmax;
     width: 20rem;
     margin-top: 2rem;
   }
