@@ -117,6 +117,9 @@ body {
   }
   
   .bild {
+    width: 30%;
+    height: auto;
+
     width: 20rem;
     margin-top: 2rem;
   }
