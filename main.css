@@ -113,12 +113,13 @@ body {
   }
 
   #bild {
-    width: 30vmax;
+    //width: 30vmax;
   }
   
   .bild {
-    //width: -60%;
+    max-width: 20%;
     height: auto;
+
 
     //width: 20rem;
     margin-top: 2rem;
