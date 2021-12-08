@@ -117,10 +117,10 @@ body {
   }
   
   .bild {
-    width: 30%;
+    width: 20%;
     height: auto;
 
-    width: 20rem;
+    //width: 20rem;
     margin-top: 2rem;
   }
 }
