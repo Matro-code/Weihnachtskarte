@@ -113,7 +113,7 @@ body {
   }
 
   #bild {
-    //width: 30vmax;
+    width: 30vmax;
     //width:10%;
     //height: 10%;
   }
@@ -122,7 +122,7 @@ body {
     //width:10%; //567px -450px;
     //height: 10%; //785px - 450px;
     //max-width: 20%;
-    //height: auto;
+    height: auto;
 
 
     //width: 20rem;
