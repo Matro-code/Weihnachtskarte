@@ -114,15 +114,15 @@ body {
 
   #bild {
     width: 30vmax;
-    width: 20%;
-    height: 20%;
+    width: -70%;
+    height: -70%;
   }
   
   .bild {
     //width:10%; //567px -450px;
     //height: 10%; //785px - 450px;
     //max-width: 20%;
-    height: auto;
+    //height: auto;
 
 
     width: 20rem;
