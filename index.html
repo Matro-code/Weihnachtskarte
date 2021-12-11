@@ -18,7 +18,11 @@
   <audio controls loop autoplay height="10" width="100" id="Sound">
        <source src="xmas.mp3" autoplay="true" Volume="60" type="audio/mp3" />
   </audio>
-
+  
+  <audio id="myAudio" controls autoplay>
+  <source src="xmas.mp3" type="audio/mpeg">
+  </audio>
+    
     <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
     <a href="#content" id="los">&#8681;</a>
     <div style="height: 100vh"></div>
@@ -38,8 +42,14 @@
     </div>
     <script src="name.js"></script>
     <script src="schnee.js"></script>
-
-
-
+    
+    <script>
+    var x = document.getElementById("myAudio");
+    function enableAutoplay() { 
+    x.autoplay = true;
+    x.load();
+    }
+    </script>
+    
     </body>
 </html>
