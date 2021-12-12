@@ -12,17 +12,42 @@
     />
   </head>
   <body>
-    <!-- <embed name="Songtitel" src="xmas.mp3" border="0" width="0" height="0" autostart="true" Delay="0" VOLUME="100" loop="true"> -->
-    
-  <!-- <audio controls loop autoplay height="10" width="100" id="Sound">
-       <source src="xmas.mp3" autoplay="true" Volume="60" type="audio/mp3" />
-  </audio> -->
-    
-    <audio autoplay="">
-      <source scr ="xmas.mp3" type="audio/mp3">
-      </source>
-    </audio>
-              
+<script type="text/javascript">
+     pic = new Array();
+     pic[1] = new Image(); pic[1].src = "Sound_on.gif";
+     pic[2] = new Image(); pic[2].src = "Sound_off.jpg";
+   var a=1;
+  function weiter()
+  {
+    ++a;
+    if (a>2) a=1;
+    alert('Nun sollte kommen: Nr: ' + a + ' Name: ' + pic[a].src);
+    document.getElementById('meinBild').src = pic[a].src;
+  }
+</script>
+
+<audio id="player">
+   <source src="xmas.mp3" type="audio/mpeg">
+</audio>
+
+<img src="img/Sound_off.gif" name="playbutton" width="52" height="49" id="playbutton" title="Abspielen" style="cursor: pointer" onClick="abspielen()"/>
+<img src="img/sound_on.gif" name="pausebutton" width="52" height="49" id="pausebutton" title="Pause" style="display: none; cursor: pointer" onClick="pausieren()"/>
+
+<script type="text/javascript">
+    function abspielen()
+    {
+       document.getElementById("player").play();
+       document.getElementById("pausebutton").style.display = "";
+       document.getElementById("playbutton").style.display = "none";
+    }
+    function pausieren()
+    {
+       document.getElementById("player").pause();
+       document.getElementById("playbutton").style.display = "";
+       document.getElementById("pausebutton").style.display = "none";
+    }
+ </script>
+
   
     <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
     <a href="#content" id="los">&#8681;</a>
