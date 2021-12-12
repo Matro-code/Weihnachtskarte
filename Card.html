@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frohe Weihnachten!</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+<audio id="player">
+   <source src="xmas.mp3" type="audio/mpeg">
+</audio>
+
+<img src="Sound_on.gif" name="playbutton" width="102" height="99" id="playbutton" title="Abspielen" style="cursor: pointer" onClick="abspielen()"/>
+<img src="sound_off.gif" name="pausebutton" width="102" height="99" id="pausebutton" title="Pause" style="display: none; cursor: pointer" onClick="pausieren()"/>
+
+<script type="text/javascript">
+    function abspielen()
+    {
+       document.getElementById("player").play();
+       document.getElementById("pausebutton").style.display = "";
+       document.getElementById("playbutton").style.display = "none";
+    }
+    function pausieren()
+    {
+       document.getElementById("player").pause();
+       document.getElementById("playbutton").style.display = "";
+       document.getElementById("pausebutton").style.display = "none";
+    }
+ </script>
+
+  
+    <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
+    <a href="#content" id="los">&#8681;</a>
+    <div style="height: 100vh"></div>
+    <div id="content">
+      <p>
+       Wir wollten Dir eine Weihnachtskarte schicken, aber wir haben vergessen, wie man einen Briefumschlag anbringt, 
+       wo man Briefmarken kaufen kann und wir wollten Dir eine Reise zu deinem Briefkasten ersparen!
+      </p>
+      <p>
+        Wir wünschen dir ein frohes Weihnachtsfest und einen guten Start ins neue Jahr 2022.
+      </p>
+      
+      <img src="Bild1.jpg" id="bild"/>
+      <h2>Ela & Manni</h2>
+    </div>
+    <script src="name.js"></script>
+    <script src="schnee.js"></script>
+       
+    </body>
+</html>
