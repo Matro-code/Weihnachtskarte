@@ -48,13 +48,23 @@
        document.getElementById("pausebutton").style.display = "none";
     }
  </script>
-
+    
+    <script>
+        // Textdatei laden
+        function getText() {
+          var dateiName =name;
+          var output=dateiName +".txt";
+          return output;  
+        }
+          document.write('<embed src="'getText()+'">');
+    </script>
   
     <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
     <a href="#content" id="los">&#8681;</a>
     <div style="height: 100vh"></div>
     <div id="content">
       <!-- <h2>Liebes Team...</h2> -->
+      
       <p>
         mit diesem Weihnachtsgruß möchte ich mich für die angenehme Zusammenarbeit bedanken und gleichzeitig darauf hoffen, 
         dass wir uns auch im neuen Jahr das Vertrauen schenken werden und wir gemeinsam die neuen Herausforderungen meistern werden.
