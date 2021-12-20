@@ -40,7 +40,7 @@ color: red;
 }
 
 #content p {
-  font-family: sans-serif;
+  font-family: Arial;//sans-serif;
   font-size: 11px;
   font-size: 0,9rem;
   margin: 1rem;
