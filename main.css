@@ -18,6 +18,11 @@ body {
   line-height: 1.1;
 }
 
+.wellcome {
+text-align: center;
+color: red;
+}
+
 .red {
   color: red;
 }
@@ -36,6 +41,8 @@ body {
 
 #content p {
   font-family: sans-serif;
+  font-size: 11px;
+  font-size: 0,9rem;
   margin: 1rem;
 }
 
@@ -49,6 +56,9 @@ body {
   transform: translate(-50%, -50%);
 }
 
+#bild {
+  width: 30vmax;
+}
 
 .snow-wrapper {
   left: 50%;
@@ -113,19 +123,9 @@ body {
   }
 
   #bild {
-    width: 30vmax;
-    width: -90%;
-    height: -90%;
-  }
-  
-  .bild {
-    //width:10%; //567px -450px;
-    //height: 10%; //785px - 450px;
-    //max-width: 20%;
-    //height: auto;
-
-
     width: 20rem;
     margin-top: 2rem;
   }
+  
 }
+
