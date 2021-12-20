@@ -6,33 +6,26 @@
     <title>Frohe Weihnachten!</title>
     <link rel="stylesheet" href="main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet" />
+    <style>
+      embed {
+          font-size: 10px;
+          max-width:100%;
+          //height: auto; 
+      }
+      </style>
+
   </head>
   <body>
-<script type="text/javascript">
-     pic = new Array();
-     pic[1] = new Image(); pic[1].src = "Sound_on.gif";
-     pic[2] = new Image(); pic[2].src = "Sound_off.gif";
-   var a=1;
-  function weiter()
-  {
-    ++a;
-    if (a>2) a=1;
-    alert('Nun sollte kommen: Nr: ' + a + ' Name: ' + pic[a].src);
-    document.getElementById('meinBild').src = pic[a].src;
-  }
-</script>
 
 <audio id="player">
    <source src="xmas.mp3" type="audio/mpeg">
 </audio>
 
-<!-- <img src="img/Sound_off.gif" onclick="weiter();" width="152" height="149" ID="meinBild"> -->
-<img src="Sound_on.gif" name="playbutton" width="102" height="99" id="playbutton" title="Abspielen" style="cursor: pointer" onClick="abspielen()"/>
-<img src="sound_off.gif" name="pausebutton" width="102" height="99" id="pausebutton" title="Pause" style="display: none; cursor: pointer" onClick="pausieren()"/>
+<img src="Sound_off.gif" name="playbutton" width="102" height="99" id="playbutton" title="Abspielen" style="cursor: pointer" onClick="abspielen()"
+ onMouseover="playbutton.src='Sound_on.gif'" onMouseout="playbutton.src='Sound_off.gif'"/>
+<img src="sound_on.gif" name="pausebutton" width="102" height="99" id="pausebutton" title="Pause" style="display: none; cursor: pointer" onClick="pausieren()"
+ onMouseover="pausebutton.src='Sound_off.gif'" onMouseout="pausebutton.src='Sound_on.gif'"/>    
 
 <script type="text/javascript">
     function abspielen()
@@ -47,35 +40,21 @@
        document.getElementById("playbutton").style.display = "";
        document.getElementById("pausebutton").style.display = "none";
     }
+  
  </script>
-    
-   <script type="text/javascript">
-        // Textdatei laden
-        function getText() {
-          var dateiName ="Mad";
-          var output = dateiName + ".txt";
-          return output;  
-        }
-     document.write('<embed src="'+getText()+'">');
-    </script>
+
   
     <h1 class="heading">Frohe Weihnachten, <span id="name"></span> !</h1>
     <a href="#content" id="los">&#8681;</a>
     <div style="height: 100vh"></div>
+    
     <div id="content">
-      <!-- <h2>Liebes Team...</h2> -->
-      
-      <embed src="Info_2.txt">
-      
-      <p>
-        mit diesem Weihnachtsgruß möchte ich mich für die angenehme Zusammenarbeit bedanken und gleichzeitig darauf hoffen, 
-        dass wir uns auch im neuen Jahr das Vertrauen schenken werden und wir gemeinsam die neuen Herausforderungen meistern werden.
-      </p>
-      <p>
-        Vielen Dank für ein erfolgreiches Jahr 2022! <br>
-        Ich wünschen dir und deiner Familie ein frohes Weihnachtsfest und einen guten Start ins neue Jahr.
-      </p>
-      
+     <script>
+     </script>     
+
+     <embed  id="MAtext" src="" width = "400" height ="300"  /> 
+
+   
       <img src="Bild1.jpg" id="bild"/>
       <h2>Manfred</h2>
     </div>
